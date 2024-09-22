@@ -59,12 +59,20 @@ curl --location 'http://127.0.0.1:8000/like' \
 
 # Puntos extras.
 
-Mejora de la base de datos.
+### Mejora de la base de datos.
 
 Para hacer más eficients las consultas y evitar subquerys, el modelo de 'property' debería incluir el id del ultimo estado en el que se encuentra, en vez de tener que recurrir al historial consultando el registro más reciente se podrá hacer un solo JOIN con la tabla que contiene la información de los estados.
 
 Se propone que el nuevo modelo sea así:
-<img src="./docs/er-likes.png">
+<img src="./docs/new-model.png">
+
+### TTD (Tests)
+
+Los puedes correr con el comando
+
+```
+pytest
+```
 
 Recomendaciones adicionales:
 

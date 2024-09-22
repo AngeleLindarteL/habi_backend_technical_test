@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "habi-backend-technical-test"
+version = "0.1.0"
+description = ""
+authors = ["angel lindarte <angel@pandas.com.co>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pydash = "^8.0.3"
+mysql-connector-python = "^9.0.0"
+fastapi = {extras = ["standard"], version = "^0.115.0"}
+pydantic = "^2.9.2"
+pytest = "^8.3.3"
+python-dotenv = "^1.0.1"
+pytest-asyncio = "^0.24.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
